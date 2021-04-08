@@ -7,7 +7,6 @@ exports[`Appbar matches snapshot 1`] = `
 >
   <styled.div
     as="header"
-    role="header"
   >
     <Link
       href="/"

@@ -5,9 +5,7 @@ exports[`Footer matches snapshot 1`] = `
   background="gray900"
   p={16}
 >
-  <styled.div
-    role="footer"
-  >
+  <styled.div>
     <styled.span
       colorName="white"
       kind="bodyM"
