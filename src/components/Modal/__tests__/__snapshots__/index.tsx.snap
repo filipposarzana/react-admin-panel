@@ -7,7 +7,7 @@ exports[`Modal matches snapshot with open 1`] = `
   <Styled(styled.div)
     as="section"
     index={0}
-    onClick={[MockFunction]}
+    onClick={[Function]}
   />
   <Styled(styled.div)
     background="white"
@@ -21,7 +21,7 @@ exports[`Modal matches snapshot with open 1`] = `
       pb={16}
     >
       <Button
-        onClick={[MockFunction]}
+        onClick={[Function]}
         type="button"
       >
         Close
