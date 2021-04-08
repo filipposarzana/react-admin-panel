@@ -12,7 +12,7 @@ type Props = {
 const fieldName = 'friendUuid'
 const required = 'Mandatory'
 
-export const FriendUuid = ({ defaultValue, users }: Props) => {
+export const FriendUuid = ({ defaultValue = '', users }: Props) => {
   const {
     control,
     formState: { isSubmitting, errors },
