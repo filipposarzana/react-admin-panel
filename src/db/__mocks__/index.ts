@@ -16,4 +16,9 @@ export const users: User[] = [
     name: 'A User Friend',
     uuid: 'acc82963-61c3-37ec-b334-e8f6bf6b7f57',
   },
+  {
+    friends: [],
+    name: 'A Friend of a Friend',
+    uuid: '34e65f4b-188c-37e3-a73c-4e0f244df9eb',
+  },
 ]
