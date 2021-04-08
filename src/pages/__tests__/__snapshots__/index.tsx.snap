@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home matches snapshot 1`] = `
+<React.Fragment>
+  <Head>
+    <title>
+      Home - Admin
+    </title>
+  </Head>
+  <SectionMain>
+    <SectionHeader>
+      <SectionHeaderTitle
+        title="Users"
+      />
+      <SectionHeaderLink
+        href="/users/create"
+        text="New user"
+      />
+    </SectionHeader>
+    <SectionBody>
+      <UserList
+        users={
+          Array [
+            Object {
+              "friends": Array [
+                Object {
+                  "name": "A Friend",
+                  "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+                },
+              ],
+              "name": "A User",
+              "uuid": "6bb0295f-8665-30a1-af76-6d1236b88971",
+            },
+            Object {
+              "friends": Array [],
+              "name": "A User Friend",
+              "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+            },
+          ]
+        }
+      />
+      <SectionEmptyState
+        list={
+          Array [
+            Object {
+              "friends": Array [
+                Object {
+                  "name": "A Friend",
+                  "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+                },
+              ],
+              "name": "A User",
+              "uuid": "6bb0295f-8665-30a1-af76-6d1236b88971",
+            },
+            Object {
+              "friends": Array [],
+              "name": "A User Friend",
+              "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+            },
+          ]
+        }
+        message="No users"
+      />
+    </SectionBody>
+  </SectionMain>
+</React.Fragment>
+`;
