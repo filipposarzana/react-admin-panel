@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button matches snapshot with all props 1`] = `
+<styled.div
+  as="button"
+  background="gray900"
+  borderRadius={4}
+  data-test-id="button"
+  disabled={true}
+  onClick={[MockFunction]}
+  p={8}
+  type="submit"
+>
+  <styled.span
+    colorName="white"
+    kind="bodyM"
+  >
+    Save
+  </styled.span>
+</styled.div>
+`;
+
+exports[`Button matches snapshot with default props 1`] = `
+<styled.div
+  as="button"
+  background="gray900"
+  borderRadius={4}
+  data-test-id="button"
+  disabled={false}
+  onClick={[Function]}
+  p={8}
+  type="button"
+>
+  <styled.span
+    colorName="white"
+    kind="bodyM"
+  >
+    Save
+  </styled.span>
+</styled.div>
+`;
