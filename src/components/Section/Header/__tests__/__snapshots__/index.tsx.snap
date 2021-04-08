@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeader matches snapshot 1`] = `
+<styled.div
+  align="center"
+  direction="row"
+  justify="space-between"
+  pb={24}
+>
+  <div />
+</styled.div>
+`;

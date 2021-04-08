@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeaderLink matches snapshot 1`] = `
+<styled.div
+  as="a"
+  background="gray900"
+  borderRadius={4}
+  p={8}
+>
+  <Link
+    href="/users/create"
+  >
+    <styled.span
+      colorName="white"
+      kind="bodyM"
+    >
+      New user
+    </styled.span>
+  </Link>
+</styled.div>
+`;
