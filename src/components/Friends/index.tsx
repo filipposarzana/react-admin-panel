@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from 'react'
+import { Dispatch, SetStateAction, useCallback, useEffect, useState } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { Button } from '~/components/Button'
 import { Form } from '~/components/Form/Element'
@@ -42,10 +42,7 @@ export const Friends = ({ friends, onAdded, users }: Props) => {
     })
   }, [])
 
-  const selectableUsers = useMemo(() => users.filter((f) => !friends.some((fr) => fr.uuid === f.uuid)), [
-    friends,
-    users,
-  ])
+  const selectableUsers = users.filter((f) => !friends.some((fr) => fr.uuid === f.uuid))
 
   useEffect(() => {
     onAdded(selectedFriends)
