@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex matches snapshot with background props 1`] = `
+.c0 {
+  background-color: rgb(118,118,118);
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+<div
+  class="c0"
+  direction="column"
+  wrap="nowrap"
+/>
+`;
+
+exports[`Flex matches snapshot with border-radius props 1`] = `
+.c0 {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+<div
+  class="c0"
+  direction="column"
+  wrap="nowrap"
+/>
+`;
+
+exports[`Flex matches snapshot with default props 1`] = `
+.c0 {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+<div
+  class="c0"
+  direction="column"
+  wrap="nowrap"
+/>
+`;
+
+exports[`Flex matches snapshot with disabled props 1`] = `
+.c0 {
+  pointer-events: none;
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+<div
+  class="c0"
+  direction="column"
+  disabled=""
+  wrap="nowrap"
+/>
+`;
+
+exports[`Flex matches snapshot with flex props 1`] = `
+.c0 {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+<div
+  class="c0"
+  direction="column"
+  wrap="nowrap"
+/>
+`;
+
+exports[`Flex matches snapshot with padding props 1`] = `
+.c0 {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
+<div
+  class="c0"
+  direction="column"
+  wrap="nowrap"
+/>
+`;

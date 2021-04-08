@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches snapshot 1`] = `
+<styled.div
+  background="gray900"
+  p={16}
+>
+  <styled.div
+    role="footer"
+  >
+    <styled.span
+      colorName="white"
+      kind="bodyM"
+    >
+      © 
+      2020
+    </styled.span>
+  </styled.div>
+</styled.div>
+`;
