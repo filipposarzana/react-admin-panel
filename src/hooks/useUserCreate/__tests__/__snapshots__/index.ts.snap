@@ -19,6 +19,11 @@ Array [
   },
   Object {
     "friends": Array [],
+    "name": "A Friend of a Friend",
+    "uuid": "34e65f4b-188c-37e3-a73c-4e0f244df9eb",
+  },
+  Object {
+    "friends": Array [],
     "name": "Added",
     "uuid": "0267eff2-b1ca-331c-be5b-bb5aa22a6e5b",
   },

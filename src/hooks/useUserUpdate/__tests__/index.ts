@@ -1,8 +1,7 @@
-import { mocked } from 'ts-jest/utils'
 import { maximumAllowedRetriesError } from '~/constants/errors'
 import { users } from '~/db'
+import { mockedShouldFailRandomly } from '~/mocks/shouldFailRandomly'
 import { renderer } from '~/utils/jest'
-import { shouldFailRandomly } from '~/utils/shouldFailRandomly'
 import { useUserUpdate } from '..'
 
 jest.mock('~/db')
@@ -14,8 +13,6 @@ jest.mock('uuid', () => ({
 }))
 
 afterEach(jest.clearAllMocks)
-
-const mockedShouldFailRandomly = mocked(shouldFailRandomly)
 
 describe('useUserUpdate', () => {
   it('returns a list of users with updated user', () => {
