@@ -14,14 +14,17 @@ export const create = (user: UpdatableUser) => {
 
 export const get = () => users
 
-export const update = (uuid: string, updates: UpdatableUser) =>
-  users.map((user) => {
-    if (user.uuid === uuid) {
-      return {
-        ...user,
-        ...updates,
-      }
-    }
+export const update = (uuid: string, updates: UpdatableUser) => {
+  const userIndex = users.findIndex((user) => user.uuid === uuid)
 
-    return user
-  })
+  if (userIndex < 0) {
+    throw new Error(`User with uuid ${uuid} does not exists`)
+  }
+
+  users[userIndex] = {
+    ...users[userIndex],
+    ...updates,
+  }
+
+  return users
+}
