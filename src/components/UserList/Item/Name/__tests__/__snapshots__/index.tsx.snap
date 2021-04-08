@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserListItemName matches snapshot 1`] = `
+<styled.span
+  colorName="gray900"
+  kind="bodyL"
+>
+  A User
+</styled.span>
+`;
