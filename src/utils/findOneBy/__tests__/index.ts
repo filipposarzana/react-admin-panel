@@ -8,7 +8,8 @@ afterEach(jest.clearAllMocks)
 describe('findOneByName', () => {
   it('returns a user by its name', () => {
     expect(findOneByName('A User')).toBe(users[0])
-    expect(findOneByName('A user')).toBeUndefined()
+    expect(findOneByName('A user')).toBe(users[0])
+    expect(findOneByName('A Fuser')).toBeUndefined()
   })
 })
 
