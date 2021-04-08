@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FriendUuid matches snapshot 1`] = `
+<styled.div>
+  <Controller
+    name="friendUuid"
+    render={[Function]}
+    rules={
+      Object {
+        "required": "Mandatory",
+      }
+    }
+  />
+  <FormError />
+</styled.div>
+`;

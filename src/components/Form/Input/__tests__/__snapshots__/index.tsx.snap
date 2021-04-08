@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput matches snapshot with error 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  background: rgb(255,255,255);
+  border: 1px solid rgb(225,61,6);
+  border-radius: 4px;
+  color: rgb(64,64,64);
+  cursor: text;
+  font-size: 16px;
+  margin: 0;
+  min-width: 250px;
+  outline: 0;
+  padding: 12px 16px;
+}
+
+.c0:focus {
+  border: 1px solid rgb(225,61,6);
+  box-shadow: none;
+  outline: none;
+}
+
+<input
+  class="c0"
+/>
+`;
+
+exports[`FormInput matches snapshot without error 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  background: rgb(255,255,255);
+  border: 1px solid rgb(118,118,118);
+  border-radius: 4px;
+  color: rgb(64,64,64);
+  cursor: text;
+  font-size: 16px;
+  margin: 0;
+  min-width: 250px;
+  outline: 0;
+  padding: 12px 16px;
+}
+
+.c0:focus {
+  border: 1px solid rgb(64,64,64);
+  box-shadow: none;
+  outline: none;
+}
+
+<input
+  class="c0"
+/>
+`;
