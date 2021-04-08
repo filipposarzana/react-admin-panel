@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useUserUpdate returns a list of users with updated user 1`] = `
+Array [
+  Object {
+    "friends": Array [],
+    "name": "Updated",
+    "uuid": "6bb0295f-8665-30a1-af76-6d1236b88971",
+  },
+  Object {
+    "friends": Array [],
+    "name": "A User Friend",
+    "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+  },
+]
+`;
