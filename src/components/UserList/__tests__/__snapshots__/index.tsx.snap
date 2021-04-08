@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList matches snapshot with users 1`] = `
+<SectionBodyList>
+  <UserListItem
+    index={0}
+    onRemove={[Function]}
+    user={
+      Object {
+        "friends": Array [
+          Object {
+            "name": "A Friend",
+            "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+          },
+        ],
+        "name": "A User",
+        "uuid": "6bb0295f-8665-30a1-af76-6d1236b88971",
+      }
+    }
+  />
+  <UserListItem
+    index={1}
+    onRemove={[Function]}
+    user={
+      Object {
+        "friends": Array [],
+        "name": "A User Friend",
+        "uuid": "acc82963-61c3-37ec-b334-e8f6bf6b7f57",
+      }
+    }
+  />
+</SectionBodyList>
+`;
+
+exports[`UserList matches snapshot without users 1`] = `null`;

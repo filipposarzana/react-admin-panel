@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserListItemUuid matches snapshot 1`] = `
+<styled.span
+  colorName="gray300"
+  fontStyle="italic"
+  kind="bodyS"
+>
+  6bb0295f-8665-30a1-af76-6d1236b88971
+</styled.span>
+`;

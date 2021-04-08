@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserListItem matches snapshot without remove Button 1`] = `
+<SectionBodyListItem
+  index={0}
+>
+  <styled.div
+    align="center"
+    direction="row"
+    justify="space-between"
+  >
+    <Link
+      href="users/edit/6bb0295f-8665-30a1-af76-6d1236b88971"
+    >
+      <styled.span
+        as="a"
+      >
+        <UserListItemName
+          name="A User"
+        />
+        <br />
+        <UserListItemUuid
+          uuid="6bb0295f-8665-30a1-af76-6d1236b88971"
+        />
+      </styled.span>
+    </Link>
+  </styled.div>
+</SectionBodyListItem>
+`;
+
+exports[`UserListItem matches snapshot without remove Button 2`] = `
+<SectionBodyListItem
+  index={0}
+>
+  <styled.div
+    align="center"
+    direction="row"
+    justify="space-between"
+  >
+    <Link
+      href="users/edit/6bb0295f-8665-30a1-af76-6d1236b88971"
+    >
+      <styled.span
+        as="a"
+      >
+        <UserListItemName
+          name="A User"
+        />
+        <br />
+        <UserListItemUuid
+          uuid="6bb0295f-8665-30a1-af76-6d1236b88971"
+        />
+      </styled.span>
+    </Link>
+    <styled.div
+      pl={8}
+    >
+      <UserListItemRemoveButton
+        onRemove={[MockFunction]}
+        uuid="6bb0295f-8665-30a1-af76-6d1236b88971"
+      />
+    </styled.div>
+  </styled.div>
+</SectionBodyListItem>
+`;
