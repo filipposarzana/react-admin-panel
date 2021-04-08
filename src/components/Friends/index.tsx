@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useMemo, useState } from 'react'
+import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { Button } from '~/components/Button'
 import { Form } from '~/components/Form/Element'
@@ -30,29 +30,26 @@ export const Friends = ({ friends, onAdded, users }: Props) => {
     setSelectedFriends((state) => {
       const stateFriends = state.concat(user)
 
-      onAdded(stateFriends)
-
       return stateFriends
     })
   })
 
-  const onRemove = useCallback(
-    (friendUuid: string) => {
-      setSelectedFriends((state) => {
-        const stateFriends = state.filter(({ uuid }) => uuid !== friendUuid)
+  const onRemove = useCallback((friendUuid: string) => {
+    setSelectedFriends((state) => {
+      const stateFriends = state.filter(({ uuid }) => uuid !== friendUuid)
 
-        onAdded(stateFriends)
-
-        return stateFriends
-      })
-    },
-    [onAdded],
-  )
+      return stateFriends
+    })
+  }, [])
 
   const selectableUsers = useMemo(() => users.filter((f) => !friends.some((fr) => fr.uuid === f.uuid)), [
     friends,
     users,
   ])
+
+  useEffect(() => {
+    onAdded(selectedFriends)
+  }, [selectedFriends, onAdded])
 
   if (!users.length) {
     return null
@@ -60,7 +57,7 @@ export const Friends = ({ friends, onAdded, users }: Props) => {
 
   return (
     <FormProvider {...form}>
-      <Form onSubmit={onSubmit}>
+      <Form data-test-id="form-friends" onSubmit={onSubmit}>
         <Flex align="flex-start" pb={16}>
           <FriendUuid users={selectableUsers} />
 
