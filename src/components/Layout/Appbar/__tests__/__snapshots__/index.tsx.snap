@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Appbar matches snapshot 1`] = `
+<styled.div
+  background="gray900"
+  p={16}
+>
+  <styled.div
+    as="header"
+    role="header"
+  >
+    <Link
+      href="/"
+    >
+      <styled.span
+        colorName="white"
+        kind="headingL"
+      >
+        Admin
+      </styled.span>
+    </Link>
+  </styled.div>
+</styled.div>
+`;
