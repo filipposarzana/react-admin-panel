@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form matches snapshot 1`] = `
+<form
+  className="sc-19qvh5f-0 sc-1wc2hvr-0 ioBge"
+  direction="column"
+  noValidate={true}
+  wrap="nowrap"
+/>
+`;

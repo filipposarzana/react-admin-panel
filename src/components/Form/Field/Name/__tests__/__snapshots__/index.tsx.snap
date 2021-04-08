@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Name matches snapshot with defaultValue 1`] = `
+<styled.div>
+  <FormLabel
+    htmlFor="name"
+    label="Name"
+  />
+  <Controller
+    defaultValue="Name"
+    name="name"
+    render={[Function]}
+    rules={
+      Object {
+        "required": "Mandatory",
+      }
+    }
+  />
+  <FormError />
+</styled.div>
+`;
+
+exports[`Name matches snapshot without defaultValue 1`] = `
+<styled.div>
+  <FormLabel
+    htmlFor="name"
+    label="Name"
+  />
+  <Controller
+    name="name"
+    render={[Function]}
+    rules={
+      Object {
+        "required": "Mandatory",
+      }
+    }
+  />
+  <FormError />
+</styled.div>
+`;

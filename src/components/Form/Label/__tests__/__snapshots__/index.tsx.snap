@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormLabel matches snapsho 1`] = `
+<styled.div
+  pb={8}
+>
+  <styled.span
+    as="label"
+    colorName="gray900"
+    htmlFor="name"
+    kind="bodyL"
+  >
+    Name
+  </styled.span>
+</styled.div>
+`;

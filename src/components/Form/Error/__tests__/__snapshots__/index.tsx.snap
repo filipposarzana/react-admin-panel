@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormError matches snapshot with all props 1`] = `
+<styled.div
+  pt={4}
+>
+  <styled.span
+    colorName="red900"
+    kind="bodyS"
+  >
+    Error
+  </styled.span>
+</styled.div>
+`;
+
+exports[`FormError matches snapshot with default props 1`] = `null`;
