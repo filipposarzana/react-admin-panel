@@ -11,7 +11,7 @@ type Props = {
 const fieldName = 'name'
 const required = 'Mandatory'
 
-export const Name = ({ defaultValue }: Props) => {
+export const Name = ({ defaultValue = '' }: Props) => {
   const {
     control,
     formState: { isSubmitting, errors },

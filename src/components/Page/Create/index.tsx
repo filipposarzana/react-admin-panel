@@ -19,13 +19,12 @@ import { useUserCreate } from '~/hooks/useUserCreate'
 type Props = {
   index: number
   onCreated: () => void
-  user?: User
 }
 
-export const CreatePage = ({ index, onCreated, user }: Props) => {
+export const CreatePage = ({ index, onCreated }: Props) => {
   const [showRetry, setShowRetry] = useState(false)
   const [isOpen, setOpen] = useState(false)
-  const [friends, setFriends] = useState<User['friends']>((user && user.friends) || [])
+  const [friends, setFriends] = useState<User['friends']>([])
   const form = useForm<User>({ mode: 'onChange' })
   const createUser = useUserCreate()
   const users = get()
@@ -55,7 +54,7 @@ export const CreatePage = ({ index, onCreated, user }: Props) => {
     <>
       <SectionMain>
         <FormProvider {...form}>
-          <Form onSubmit={onSubmit}>
+          <Form data-test-id="form-create" onSubmit={onSubmit}>
             <SectionHeader>
               <SectionHeaderTitle title="Create user" />
 
@@ -66,7 +65,7 @@ export const CreatePage = ({ index, onCreated, user }: Props) => {
 
             <SectionBody>
               <Flex align="flex-start">
-                <Name defaultValue={user && user.name} />
+                <Name />
               </Flex>
             </SectionBody>
           </Form>

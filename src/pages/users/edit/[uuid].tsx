@@ -1,3 +1,4 @@
+import Error from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useCallback } from 'react'
@@ -13,7 +14,7 @@ const DetailUser = () => {
   const onCreated = useCallback(() => replace('/'), [replace])
 
   if (!user) {
-    return null
+    return <Error statusCode={404} title="User not found" />
   }
 
   return (

@@ -3,6 +3,7 @@
 exports[`FriendUuid matches snapshot 1`] = `
 <styled.div>
   <Controller
+    defaultValue=""
     name="friendUuid"
     render={[Function]}
     rules={

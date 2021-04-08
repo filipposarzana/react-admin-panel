@@ -13,7 +13,7 @@ import { SectionHeader } from '~/components/Section/Header'
 import { SectionHeaderTitle } from '~/components/Section/HeaderTitle'
 import { SectionMain } from '~/components/Section/Main'
 import { maximumAllowedRetriesError } from '~/constants/errors'
-import { User } from '~/db'
+import { UpdatableUser, User } from '~/db'
 import { useUserUpdate } from '~/hooks/useUserUpdate'
 
 type Props = {
@@ -26,14 +26,14 @@ export const UpdatePage = ({ index, onCreated, user }: Props) => {
   const [showRetry, setShowRetry] = useState(false)
   const [isOpen, setOpen] = useState(false)
   const [friends, setFriends] = useState<User['friends']>(user.friends)
-  const form = useForm<User>({ mode: 'onChange' })
+  const form = useForm<UpdatableUser>({ mode: 'onChange' })
   const updateUser = useUserUpdate()
   const users = get()
 
   const onOpen = useCallback(() => setOpen(true), [])
   const onClose = useCallback(() => setOpen(false), [])
 
-  const onSubmit = form.handleSubmit((data: User) => {
+  const onSubmit = form.handleSubmit((data: UpdatableUser) => {
     setShowRetry(false)
 
     try {
@@ -55,12 +55,12 @@ export const UpdatePage = ({ index, onCreated, user }: Props) => {
     <>
       <SectionMain>
         <FormProvider {...form}>
-          <Form onSubmit={onSubmit}>
+          <Form data-test-id="form-update" onSubmit={onSubmit}>
             <SectionHeader>
               <SectionHeaderTitle title="Update user" />
 
               <Button onClick={onSubmit} type="submit">
-                {showRetry ? 'Retry' : 'Save'}
+                {showRetry ? 'Retry' : 'Update'}
               </Button>
             </SectionHeader>
 

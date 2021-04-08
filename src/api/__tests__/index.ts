@@ -31,4 +31,10 @@ describe('update', () => {
   it('returns a list with updated user', () => {
     expect(update(users[0].uuid, { friends: [], name: 'Update name' })).toMatchSnapshot()
   })
+
+  it('throws error if user already does not exist', () => {
+    const uuid = '7e5cf716-6cd7-3ef6-b2a0-8dc6358bb323'
+
+    expect(() => update(uuid, { friends: [], name: 'Name' })).toThrowError(`User with uuid ${uuid} does not exists`)
+  })
 })

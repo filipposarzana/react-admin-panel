@@ -29,6 +29,17 @@ exports[`UserList matches snapshot with users 1`] = `
       }
     }
   />
+  <UserListItem
+    index={2}
+    onRemove={[Function]}
+    user={
+      Object {
+        "friends": Array [],
+        "name": "A Friend of a Friend",
+        "uuid": "34e65f4b-188c-37e3-a73c-4e0f244df9eb",
+      }
+    }
+  />
 </SectionBodyList>
 `;
 

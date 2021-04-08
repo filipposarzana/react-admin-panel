@@ -1,6 +1,9 @@
 import { User, users } from '~/db'
 
-const findOneBy = <K extends keyof User>(prop: K) => (value: User[K]) => users.find((user) => user[prop] === value)
+type Key = Extract<keyof User, 'name' | 'uuid'>
+
+const findOneBy = <K extends Key>(prop: K) => (value: User[K]) =>
+  users.find((user) => user[prop].toLowerCase() === value.toLowerCase())
 
 export const findOneByName = findOneBy('name')
 
