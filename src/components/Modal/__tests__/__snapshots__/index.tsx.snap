@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal matches snapshot when closed 1`] = `null`;
+
+exports[`Modal matches snapshot with open 1`] = `
+<React.Fragment>
+  <Styled(styled.div)
+    as="section"
+    index={0}
+    onClick={[MockFunction]}
+  />
+  <Styled(styled.div)
+    background="white"
+    grow={1}
+    index={0}
+    p={16}
+    shrink={1}
+  >
+    <styled.div
+      align="flex-start"
+      pb={16}
+    >
+      <Button
+        onClick={[MockFunction]}
+        type="button"
+      >
+        Close
+      </Button>
+    </styled.div>
+    <CreatePage
+      index={0}
+      onCreated={[MockFunction]}
+    />
+  </Styled(styled.div)>
+</React.Fragment>
+`;
+
+exports[`Modal matches style snapshot 1`] = `
+.c0 {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+.c1 {
+  background-color: rgba(0,0,0,0.4);
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+<section
+  class="c0 c1"
+  direction="column"
+  wrap="nowrap"
+/>
+`;
