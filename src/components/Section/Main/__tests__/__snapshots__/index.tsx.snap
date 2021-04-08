@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionMain matches snapshot 1`] = `
+<styled.div
+  as="main"
+  direction="column"
+  role="main"
+>
+  <div />
+</styled.div>
+`;

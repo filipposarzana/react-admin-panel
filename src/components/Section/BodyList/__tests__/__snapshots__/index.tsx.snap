@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionBodyList matches snapshot 1`] = `
+<styled.div
+  direction="row"
+>
+  <styled.div
+    basis="50%"
+  >
+    <styled.div
+      as="ul"
+    >
+      <div />
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

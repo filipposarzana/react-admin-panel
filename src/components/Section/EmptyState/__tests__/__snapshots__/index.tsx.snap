@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionEmptyState matches snapshot if empty 1`] = `
+<styled.div
+  as="section"
+  direction="column"
+  py={24}
+>
+  <styled.span
+    as="p"
+    colorName="gray100"
+    kind="bodyL"
+  >
+    Empty
+  </styled.span>
+</styled.div>
+`;
+
+exports[`SectionEmptyState matches snapshot if not empty 1`] = `null`;

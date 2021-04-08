@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionBodyListItem matches snapshot with even index 1`] = `
+<styled.div
+  as="li"
+  background="gray050"
+  p={8}
+>
+  <div />
+</styled.div>
+`;
+
+exports[`SectionBodyListItem matches snapshot with odd index 1`] = `
+<styled.div
+  as="li"
+  p={8}
+>
+  <div />
+</styled.div>
+`;
